@@ -71,6 +71,12 @@ ynh_app_setting_set $app is_public $is_public
 ynh_app_setting_set $app language $language
 
 #=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+
+ynh_install_php7
+
+#=================================================
 # STANDARD MODIFICATIONS
 #=================================================
 # FIND AND OPEN A PORT
@@ -168,7 +174,7 @@ ynh_print_info "Configuring php-fpm..."
 ###		- And the section "PHP-FPM CONFIGURATION" in the upgrade script
 
 # Create a dedicated php-fpm config
-ynh_add_fpm_config --phpversion=7.2
+ynh_add_fpm7.2_config
 
 #=================================================
 # SPECIFIC SETUP
@@ -214,6 +220,7 @@ ynh_app_setting_set $app skipped_uris "/"
 yunohost app ssowatconf
 
 # Reload Nginx
+systemctl reload php7.2-fpm
 systemctl reload nginx
 
 # Installation with curl

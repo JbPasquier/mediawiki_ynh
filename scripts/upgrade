@@ -104,13 +104,14 @@ ynh_print_info "Making sure dedicated system user exists..."
 # Create a dedicated user (if not existing)
 ynh_system_user_create $app
 
-#=================================================
-# PHP-FPM CONFIGURATION
-#=================================================
-ynh_print_info "Upgrading php-fpm configuration..."
 
-# Create a dedicated php-fpm config
-ynh_add_fpm_config --phpversion=7.2
+#=================================================
+# PHP-FPM 7.2 CONFIGURATION
+#=================================================
+
+# Create a dedicated php-fpm7.1 config
+ynh_add_fpm7.2_config
+
 
 #=================================================
 # SPECIFIC UPGRADE
@@ -170,7 +171,7 @@ fi
 # RELOAD NGINX
 #=================================================
 ynh_print_info "Reloading nginx web server..."
-
+systemctl reload php7.2-fpm
 systemctl reload nginx
 
 #=================================================
