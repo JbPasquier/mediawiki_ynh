@@ -168,7 +168,7 @@ ynh_print_info "Configuring php-fpm..."
 ###		- And the section "PHP-FPM CONFIGURATION" in the upgrade script
 
 # Create a dedicated php-fpm config
-ynh_add_fpm_config
+ynh_add_fpm_config --phpversion=7.2
 
 #=================================================
 # SPECIFIC SETUP

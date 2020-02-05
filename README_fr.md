@@ -14,7 +14,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 MediaWiki est un ensemble wiki à base de logiciels libres Open source, développé à l’origine pour Wikipédia.
 
-**Version incluse:** 1.32.0
+**Version incluse:** 1.34.0
 
 ## Captures d'écran
 

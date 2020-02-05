@@ -14,7 +14,7 @@ If you don't have YunoHost, please see [here](https://yunohost.org/#/install) to
 
 MediaWiki is a free and open source software wiki package written in PHP, originally for use on Wikipedia. 
 
-**Shipped version:** 1.32.0
+**Shipped version:** 1.34.0
 
 ## Screenshots
 
