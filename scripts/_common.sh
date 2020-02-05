@@ -40,19 +40,6 @@ ynh_remove_fpm7.2_config () {
 	sudo systemctl reload $fpm_service
 }
 
-# Execute a command as another user
-# usage: exec_as USER COMMAND [ARG ...]
-exec_as() {
-  local USER=$1
-  shift 1
-
-  if [[ $USER = $(whoami) ]]; then
-    eval $@
-  else
-    # use sudo twice to be root and be allowed to use another user
-    sudo sudo -u "$USER" $@
-  fi
-}
 #
 # php7.2 helpers
 #

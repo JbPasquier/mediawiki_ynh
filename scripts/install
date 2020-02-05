@@ -160,7 +160,7 @@ ynh_system_user_create $app
 #=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
-ynh_print_info "Configuring php-fpm..."
+ynh_print_info "Create a dedicated php-fpm7.2 config..."
 
 ### `ynh_add_fpm_config` is used to set up a PHP config.
 ### You can remove it if your app doesn't use PHP.
@@ -220,7 +220,6 @@ ynh_app_setting_set $app skipped_uris "/"
 yunohost app ssowatconf
 
 # Reload Nginx
-systemctl reload php7.2-fpm
 systemctl reload nginx
 
 # Installation with curl
