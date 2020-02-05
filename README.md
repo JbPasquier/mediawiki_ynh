@@ -16,6 +16,8 @@ MediaWiki is a free and open source software wiki package written in PHP, origin
 
 **Shipped version:** 1.34.0
 
+**Please note that this app will install PHP 7.2**
+
 ## Screenshots
 
 ![screenshot](sources/images/screenshot.png)

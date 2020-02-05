@@ -16,6 +16,8 @@ MediaWiki est un ensemble wiki à base de logiciels libres Open source, dévelop
 
 **Version incluse:** 1.34.0
 
+**Notez que cette app va installer PHP 7.2**
+
 ## Captures d'écran
 
 ![screenshot](sources/images/screenshot.png)
